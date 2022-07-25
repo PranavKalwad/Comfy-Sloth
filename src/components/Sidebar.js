@@ -10,7 +10,8 @@ import { useUserContext } from "../context/user_context"
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext()
-  const { myUser, loginWithRedirect } = useUserContext()
+  const { myUser } = useUserContext()
+  // eslint-disable-next-line
 
   return (
     <SidebarContainer>
