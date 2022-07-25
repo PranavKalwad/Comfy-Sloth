@@ -1,13 +1,12 @@
-import React, { useState } from "react"
-import styled from "styled-components"
+import React, { useState } from 'react'
+import styled from 'styled-components'
 
-const ProductImages = ({ images = [{ url: "" }] }) => {
+const ProductImages = ({ images = [{ url: '' }] }) => {
   const [main, setMain] = useState(images[0])
-  console.log(main)
   return (
     <Wrapper>
-      <img src={main.url} alt="main" className="main" />
-      <div className="gallery">
+      <img src={main.url} alt='main' className='main' />
+      <div className='gallery'>
         {images.map((image, index) => {
           return (
             <img
@@ -15,7 +14,7 @@ const ProductImages = ({ images = [{ url: "" }] }) => {
               alt={image.filename}
               key={index}
               onClick={() => setMain(images[index])}
-              className={`${image.url === main.url ? "active" : null}`}
+              className={`${image.url === main.url ? 'active' : null}`}
             />
           )
         })}
@@ -45,7 +44,7 @@ const Wrapper = styled.section`
     }
   }
   .active {
-    box-shadow: 0px 0px 0px 2px var(--clr-primary-5);
+    border: 2px solid var(--clr-primary-5);
   }
   @media (max-width: 576px) {
     .main {

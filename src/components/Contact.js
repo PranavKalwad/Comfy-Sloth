@@ -1,31 +1,30 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Contact = () => {
   return (
     <Wrapper>
-      <div className="section-center">
+      <div className='section-center'>
         <h3>Join our newsletter and get 20% off</h3>
-        <div className="content">
+        <div className='content'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo
-            sed repellat assumenda ex, perspiciatis provident commodi laudantium
-            temporibus earum sit aliquam, voluptatem adipisci suscipit excepturi
-            rem beatae. Beatae, hic!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            veniam repudiandae vel ab id, fuga praesentium nobis natus ipsam
+            vero?
           </p>
           <form
-            className="contact-form"
-            action="https://formspree.io/f/mqknrdwy"
-            method="POST"
+            className='contact-form'
+            action='your form spree id'
+            method='POST'
           >
             <input
-              type="email"
-              placeholder="enter email"
-              className="form-input"
-              name="email"
+              type='email'
+              className='form-input'
+              placeholder='enter email'
+              name='_replyto'
             />
-            <button type="submit" className="submit-btn">
-              Subscribe
+            <button type='submit' className='submit-btn'>
+              subscribe
             </button>
           </form>
         </div>

@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 const Footer = () => {
   return (
     <Wrapper>
@@ -7,7 +7,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()}
         <span> ComfySloth</span>
       </h5>
-      <span>All rights reserved</span>
+      <h5>All rights reserved</h5>
     </Wrapper>
   )
 }
